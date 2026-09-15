@@ -129,7 +129,12 @@ uvicorn api:app_api --reload --port 8000
 npm install n8n -g
 n8n
 ```
-Then rebuild the workflow: Schedule Trigger → HTTP Request → If → Send Email, with CSV logging handled server-side in `api.py`.
+The automation workflow (schedule trigger → HTTP request → conditional alert → CSV logging) is exported in [`n8n-workflow.json`](./n8n-workflow.json). To use it:
+
+1. Open n8n → Workflows → **Import from File**
+2. Select `n8n-workflow.json`
+3. Update the HTTP Request node's URL if your FastAPI service runs on a different host/port
+4. Reconnect your Gmail SMTP credentials (credentials aren't included in the export for security)
 
 ## Project Structure
 
