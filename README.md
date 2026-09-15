@@ -146,7 +146,7 @@ agent-guardrail/
 ├── guardrail.py             # Core confidence-calibration guardrail logic
 ├── api.py                    # FastAPI endpoint + CSV logging
 ├── n8n-workflow.json          # Exported n8n automation workflow
-├── architecture.svg            # Architecture diagram
+├── architecture.jpeg            # Architecture diagram
 ├── guardrail_log.csv            # Historical run log (generated at runtime)
 ├── .env                          # API keys (not committed)
 ├── .env.example                   # Template for required env vars
