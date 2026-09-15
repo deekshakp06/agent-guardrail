@@ -45,6 +45,9 @@ Most AI agent projects add another task-specific agent to a pipeline. This proje
 
 ## Architecture
 
+![Architecture](./architecture.jpeg)
+
+
 ```
 ┌─────────────────┐
 │ n8n Schedule     │  (runs on a schedule, e.g. daily)
