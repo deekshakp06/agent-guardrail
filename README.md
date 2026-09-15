@@ -145,8 +145,11 @@ agent-guardrail/
 ├── run_eval.py             # LangSmith evaluation runner
 ├── guardrail.py             # Core confidence-calibration guardrail logic
 ├── api.py                    # FastAPI endpoint + CSV logging
-├── guardrail_log.csv          # Historical run log (generated at runtime)
-├── .env                        # API keys (not committed)
+├── n8n-workflow.json          # Exported n8n automation workflow
+├── architecture.svg            # Architecture diagram
+├── guardrail_log.csv            # Historical run log (generated at runtime)
+├── .env                          # API keys (not committed)
+├── .env.example                   # Template for required env vars
 ├── requirements.txt
 ├── .gitignore
 └── README.md
